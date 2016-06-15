@@ -4,7 +4,7 @@ SSLKiller is used for killing SSL verification functions on **Android** client s
 
 This project is build as a Xposed module. Before using it, you have to install **[Xposed](http://repo.xposed.info/module/de.robv.android.xposed.installer)** on your Android device first!
 
-Burp Suit can help us to deploy a MITM and intercept transparent http packages. When meets https transaction, burp uses a fake server cert to communicate with the client. If app has a uncorrect cert verification process (e.g. an empty TrustManager implementation) the https packages can be intercepted by burp but if app do the right verification, burp will alert connection failed error. SSLKiller can fix this problem and let all https transaction of the app displayed in burp.
+Burp Suite can help us to deploy a MITM and intercept transparent http packages. When meets https transaction, burp uses a fake server cert to communicate with the client. If app has a uncorrect cert verification process (e.g. an empty TrustManager implementation) the https packages can be intercepted by burp but if app do the right verification, burp will alert connection failed error. SSLKiller can fix this problem and let all https transaction of the app displayed in burp.
 
 ![preview](imgs/preview.jpeg)
 
